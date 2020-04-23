@@ -126,3 +126,9 @@ supports Java 7. In particular, decompilation of lambdas is not supported.
 
 You can disable the internal debugging checks by passing -O to Python. This
 will make Krakatau slightly faster, so it is recommended for normal usage.
+
+./disassemble.py ../desktop-2.0.19.jar -out out/
+./assemble.py -r out/ -out backup/
+
+#COPY class
+jar cf desktop-2.0.19.jar .
